@@ -1,0 +1,35 @@
+//
+// Author: Murat Mert Çelen
+// 24.02.2019 22:38
+//
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PIWorks
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("First number? :");
+            int first = int.Parse(Console.ReadLine());
+            Console.WriteLine("Before converting first number: " + first);
+
+            Console.Write("\nSecond number? :");
+            int second = int.Parse(Console.ReadLine());
+            Console.WriteLine("Before converting second number: " + first);
+
+            first = first + second;
+            second = first - second;
+            first = first - second;
+
+            Console.WriteLine("After converting first number: " + first);
+            Console.WriteLine("After converting second number: " + second);
+            Console.ReadKey();
+
+        }
+    }
+}
